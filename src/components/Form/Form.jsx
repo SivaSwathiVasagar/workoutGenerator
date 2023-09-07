@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function Form(props) {
   const [formData, setFormData] = useState({
-    searchterm: "",
+    muscleGroup: "",
   });
   const handleChange = (event) => {
     //use the event object to detect key and value to update
@@ -12,19 +12,30 @@ export default function Form(props) {
   const handleSubmit = (event) => {
     //prevent page from refreshing on form submission
     event.preventDefault();
-    //pass the search term to moviesearch prop, which is apps getMovie function
-    props.exerciseSearch(formData.searchterm);
+    const selectedMuscleGroup = formData.muscleGroup;
+    console.log("Selected Muscle Group:", selectedMuscleGroup);
+    props.exerciseSearch(selectedMuscleGroup);
   };
 
   return (
     <div className="Form">
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="searchterm"
+        <label htmlFor="choose"> Choose muscle group : </label>
+        {/* <select id="choose" name="muscleGroup"> */}
+        <select
+          id="choose"
+          name="muscleGroup"
           onChange={handleChange}
-          value={formData.searchterm}
-        />
+          value={formData.muscleGroup}
+        >
+          <option value="Select muscle group">Select muscle group</option>
+          <option value="Shoulders">Shoulders</option>
+          <option value="Lats">Lats</option>
+          <option value="Chest">Chest</option>
+          <option value="Triceps">Triceps</option>
+          <option value="Biceps">Biceps</option>
+          <option value="Abs">Abs</option>
+        </select>
         <input type="submit" value="submit" />
       </form>
     </div>
