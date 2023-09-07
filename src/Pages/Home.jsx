@@ -12,7 +12,6 @@ export default function Home(props) {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "35bbfee14dmshdf2e85bd40a18a1p1f3574jsn3492cfda8fbd",
         "X-RapidAPI-Host": "exerciseapi3.p.rapidapi.com",
       },
     };
