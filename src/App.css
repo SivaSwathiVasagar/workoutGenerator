@@ -1,13 +1,35 @@
 * body {
   margin: 5px;
   padding: 0;
+  background-image: url("https://i.pinimg.com/736x/63/83/f2/6383f2c5c6dfa8b85c45fde859730056.jpg");
+  background-size: cover;
+}
+.Home {
+  height: 50%;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
 }
 
-.Ui >h3 {
+.Home >h3 {
  text-align: center;
  font-size: 1.3em;
 }
-.Ui >p {
+.Home >p {
   font-size: 1em;
   margin-left: 10px;
+}
+.Nav {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  background-color: plum;
+  color: white;
+  padding: 15px;
+  font-size: 2em;
+}
+
+.Nav a {
+  color: white;
+  text-decoration: none;
 }
