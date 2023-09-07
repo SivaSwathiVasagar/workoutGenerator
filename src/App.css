@@ -4,32 +4,71 @@
   background-image: url("https://i.pinimg.com/736x/63/83/f2/6383f2c5c6dfa8b85c45fde859730056.jpg");
   background-size: cover;
 }
+.Header {
+  height: 70px;
+  width: 100%;
+  background-color: #00b4d8;
+  font-style: italic;
+  text-align: center;
+  display: grid;
+}
 .Home {
   height: 50%;
   width: 50%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background: rgba(158, 194, 227, 0.82);
   padding: 5px;
+  margin-left: 25%;
 }
 
 .Home >h3 {
  text-align: center;
  font-size: 1.3em;
 }
+.Home >h4 {
+  text-align: center;
+ }
 .Home >p {
   font-size: 1em;
   margin-left: 10px;
+  text-align: center;
 }
 .Nav {
   display: flex;
   justify-content: center;
   gap: 60px;
-  background-color: plum;
-  color: white;
+  background-color: #ade8f4;
   padding: 15px;
   font-size: 2em;
 }
 
 .Nav a {
-  color: white;
+  color:black;
   text-decoration: none;
+}
+
+.GetExercise > .AllExercise {
+ padding: 0;
+ line-height: 0.5;
+ margin-left: 55px;
+}
+ h1 {
+  text-align: center;
+}
+.Form{
+  margin-top: 20px;
+  margin-left: 10px;
+  gap: 10%;
+  text-align: center;
+}
+
+input[type="submit"] {
+ margin-left: 5px;
+}
+label {
+  color: #7209b7;
+  font-weight: bold;
+}
+.Blog{
+  background: rgba(158, 194, 227, 0.82);
+  padding: 20px;
 }
