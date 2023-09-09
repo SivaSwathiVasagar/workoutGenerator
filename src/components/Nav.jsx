@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import React from "react";
 
 export default function Nav() {
   return (
     <div className="Nav">
-      <Link to="/">
+      <NavLink to="/" activeClassName="active">
         <div>Home</div>
-      </Link>
-      <Link to="/blog">
+      </NavLink>
+      <NavLink to="/blog" activeClassName="active">
         <div>Blog</div>
-      </Link>
+      </NavLink>
     </div>
   );
 }
