@@ -13,7 +13,6 @@ export default function Form(props) {
     //prevent page from refreshing on form submission
     event.preventDefault();
     const selectedMuscleGroup = formData.muscleGroup;
-    console.log("Selected Muscle Group:", selectedMuscleGroup);
     props.exerciseSearch(selectedMuscleGroup);
   };
 
@@ -21,14 +20,15 @@ export default function Form(props) {
     <div className="Form">
       <form onSubmit={handleSubmit}>
         <label htmlFor="choose"> Choose muscle group : </label>
-        {/* <select id="choose" name="muscleGroup"> */}
         <select
           id="choose"
           name="muscleGroup"
           onChange={handleChange}
           value={formData.muscleGroup}
         >
-          <option value="Select muscle group">Select muscle group</option>
+          <option value="" disabled>
+            Select muscle group
+          </option>
           <option value="Shoulders">Shoulders</option>
           <option value="Lats">Lats</option>
           <option value="Chest">Chest</option>
