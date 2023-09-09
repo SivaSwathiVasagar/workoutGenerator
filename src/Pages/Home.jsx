@@ -5,9 +5,8 @@ import { useState } from "react";
 
 export default function Home() {
   const [exercises, setExercise] = useState(null);
-
+  console.log(process.env);
   const getExercise = async (selectedMuscleGroup) => {
-    // const url = `https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises?muscle=${searchTerm}`;
     const url = `https://exerciseapi3.p.rapidapi.com/exercise/primary_muscle/${selectedMuscleGroup}`;
     const options = {
       method: "GET",
