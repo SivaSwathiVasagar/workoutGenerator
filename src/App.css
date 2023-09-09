@@ -1,7 +1,7 @@
 * body {
   margin: 5px;
   padding: 0;
-  background-image: url("https://i.pinimg.com/736x/63/83/f2/6383f2c5c6dfa8b85c45fde859730056.jpg");
+  background-image: url("./assets/gym.jpeg");
   background-size: cover;
 }
 .Header {
@@ -10,26 +10,25 @@
   text-align: center;
   display: grid;
   border-radius: 30px;
-  background: #cdb4db;
+  background: #370617;
+  color: white;
   box-shadow: 3px 3px 4px 0px rgba(118, 117, 117, 0.25) inset, 4px 4px 2px 0px rgba(121, 121, 121, 0.25) inset, -4px -4px 1px 0px rgba(255, 255, 255, 0.25) inset;
 }
 .Home {
   height: 50%;
-  width: 50%;
-  background: rgba(158, 194, 227, 0.82);
+  background: rgba(255, 220, 220, 0.82);
   padding: 5px;
-  margin-left: 25%;
 }
 
-.Home >h3 {
+.Home >h2 {
  text-align: center;
  font-size: 1.3em;
 }
-.Home >h4 {
+.Home >h3 {
   text-align: center;
  }
 .Home >p {
-  font-size: 1em;
+  font-size: 1.1em;
   margin-left: 10px;
   text-align: center;
 }
@@ -37,17 +36,16 @@
   display: flex;
   justify-content: center;
   gap: 60px;
-  background-color: #ade8f4;
+  background-color: #6a040f;
   padding: 15px;
-  font-size: 2em;
+  font-size: 1.5em;
   border-radius: 95px 95px 0 0  ;
   box-shadow: 3px 3px 4px 0px rgba(118, 117, 117, 0.25) inset, 4px 4px 2px 0px rgba(121, 121, 121, 0.25) inset, -4px -4px 1px 0px rgba(255, 255, 255, 0.25) inset;
-
 }
 
 .Nav a {
-  color:black;
   text-decoration: none;
+  color: white;
 }
 
 .GetExercise > .AllExercise {
@@ -55,7 +53,7 @@
  border: 1px solid #ddd;
  border-radius: 8px;
  padding: 16px;
- background: rgba(131, 183, 233, 0.82);
+ background: rgba(200, 135, 135, 0.82);
  width: 450px;
  box-shadow: 3px 3px 4px 0px rgba(176, 176, 176, 0.25) inset, 4px 4px 2px 0px rgba(182, 181, 181, 0.25) inset, -4px -4px 1px 0px rgba(255, 255, 255, 0.25) inset;
 }
@@ -76,12 +74,13 @@ input[type="submit"] {
 }
 
 label {
-  color: #7209b7;
+  color: #6a040f;
   font-weight: bold;
+  font-size: large;
 }
 
 .Blog{
-  background: rgba(158, 194, 227, 0.82);
+  background: rgba(255, 220, 220, 0.82);
   padding: 20px;
 }
 
@@ -95,5 +94,13 @@ label {
 }
 
 .active {
-  font-weight: bold;
+  font-weight: bolder;
+}
+@media (max-width: 600px) {
+  .Header {
+    font-size: 0.7em;
+  }
+  .Nav {
+    font-size: 1em;
+  }
 }

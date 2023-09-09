@@ -2,14 +2,6 @@ import React from "react";
 
 export default function GetExercise({ exercises }) {
   const loaded = () => {
-    if (
-      !exercises ||
-      !exercises.exercises ||
-      exercises.exercises.length === 0
-    ) {
-      return <h1>Choose a valid option</h1>;
-    }
-
     const Exercise = [...exercises.exercises];
     let beginnerArray = [];
     let intermediateArray = [];
