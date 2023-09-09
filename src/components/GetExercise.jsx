@@ -2,6 +2,14 @@ import React from "react";
 
 export default function GetExercise({ exercises }) {
   const loaded = () => {
+    if (
+      !exercises ||
+      !exercises.exercises ||
+      exercises.exercises.length === 0
+    ) {
+      return <h1>Choose a valid option</h1>;
+    }
+
     const Exercise = [...exercises.exercises];
     let beginnerArray = [];
     let intermediateArray = [];
@@ -16,7 +24,6 @@ export default function GetExercise({ exercises }) {
         advancedArray.push(Exercises);
       }
     });
-
     for (let j = 0; j < 1; j++) {
       if (beginnerArray.length > 0) {
         allExercisesArray.push(beginnerArray[0]);
@@ -33,17 +40,11 @@ export default function GetExercise({ exercises }) {
       }
     }
 
-    console.log("beginnerArray", beginnerArray.length);
-    console.log("intermediateArray", intermediateArray.length);
-    console.log("advancedArray", advancedArray.length);
-    console.log("allExercisesArray", allExercisesArray.length);
-    console.log("allExercisesArray", allExercisesArray);
-
     return (
       <div className="GetExercise">
-        <h3>Here is the list</h3>
-        {allExercisesArray.map((allExercises) => (
-          <div className="AllExercise">
+        <h2>Here is the list</h2>
+        {allExercisesArray.map((allExercises, index) => (
+          <div className="AllExercise" key={index}>
             <h3>Name: {allExercises.name}</h3>
             <h4>Experience: {allExercises.experience}</h4>
             <p>Equipment: {allExercises.equipment}</p>
@@ -51,7 +52,7 @@ export default function GetExercise({ exercises }) {
             <p>Primary Muscles: {allExercises.primary_muscles}</p>
             <p>Secondary Muscles: {allExercises.secondary_muscles}</p>
             <p>Mechanics: {allExercises.mechanics}</p>
-            <p> ************************************************************</p>
+            <p>Reps: 3 sets (12 to 15 repetitions/set)</p>
           </div>
         ))}
       </div>
