@@ -73,7 +73,7 @@ export default function Blog() {
         (13 cups) of water per day, or more if you're sweating heavily during
         workouts.
       </p>
-      <h4>5.Timing Matters: Pre and Post-Workout Nutrition</h4>
+      <h4>5. Timing Matters: Pre and Post-Workout Nutrition</h4>
       <p>Consider these guidelines for pre and post-workout nutrition:</p>
       <li>
         Pre-Workout: Have a balanced meal with carbohydrates and protein about
