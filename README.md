@@ -12,7 +12,7 @@ Workout Generator is a tool used to generate exercise based on user-chosen muscl
 ## Features
 
 - Choose a muscle group.
-- Choose exercise recommendations based on your experience level from the results..
+- Choose exercise based on your experience level from the results..
 
 ## Roadmap and Future Improvements
 
