@@ -7,10 +7,11 @@
 .Header {
   height: 70px;
   width: 100%;
-  background-color: #00b4d8;
-  font-style: italic;
   text-align: center;
   display: grid;
+  border-radius: 30px;
+  background: #cdb4db;
+  box-shadow: 3px 3px 4px 0px rgba(118, 117, 117, 0.25) inset, 4px 4px 2px 0px rgba(121, 121, 121, 0.25) inset, -4px -4px 1px 0px rgba(255, 255, 255, 0.25) inset;
 }
 .Home {
   height: 50%;
@@ -39,6 +40,9 @@
   background-color: #ade8f4;
   padding: 15px;
   font-size: 2em;
+  border-radius: 95px 95px 0 0  ;
+  box-shadow: 3px 3px 4px 0px rgba(118, 117, 117, 0.25) inset, 4px 4px 2px 0px rgba(121, 121, 121, 0.25) inset, -4px -4px 1px 0px rgba(255, 255, 255, 0.25) inset;
+
 }
 
 .Nav a {
@@ -47,13 +51,19 @@
 }
 
 .GetExercise > .AllExercise {
- padding: 0;
  line-height: 0.5;
- margin-left: 55px;
+ border: 1px solid #ddd;
+ border-radius: 8px;
+ padding: 16px;
+ background: rgba(131, 183, 233, 0.82);
+ width: 450px;
+ box-shadow: 3px 3px 4px 0px rgba(176, 176, 176, 0.25) inset, 4px 4px 2px 0px rgba(182, 181, 181, 0.25) inset, -4px -4px 1px 0px rgba(255, 255, 255, 0.25) inset;
 }
+
  h1 {
   text-align: center;
 }
+
 .Form{
   margin-top: 20px;
   margin-left: 10px;
@@ -64,11 +74,26 @@
 input[type="submit"] {
  margin-left: 5px;
 }
+
 label {
   color: #7209b7;
   font-weight: bold;
 }
+
 .Blog{
   background: rgba(158, 194, 227, 0.82);
   padding: 20px;
+}
+
+.GetExercise{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.active {
+  font-weight: bold;
 }
