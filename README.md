@@ -16,7 +16,7 @@ Workout Generator is a tool used to generate exercise based on user-chosen muscl
 
 ## Roadmap and Future Improvements
 
-We plan to make the following improvements:
+Have plan to make the following improvements:
 
 - Display exercises with images or gif format in the future to help users.
 - Provide additional features to enhance the workout planning experience.
