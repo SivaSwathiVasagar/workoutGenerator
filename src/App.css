@@ -47,17 +47,6 @@
   text-decoration: none;
   color: white;
 }
-
-.GetExercise > .AllExercise {
- line-height: 0.5;
- border: 1px solid #ddd;
- border-radius: 8px;
- padding: 16px;
- background: rgba(200, 135, 135, 0.82);
- width: 450px;
- box-shadow: 3px 3px 4px 0px rgba(176, 176, 176, 0.25) inset, 4px 4px 2px 0px rgba(182, 181, 181, 0.25) inset, -4px -4px 1px 0px rgba(255, 255, 255, 0.25) inset;
-}
-
  h1 {
   text-align: center;
 }
@@ -71,7 +60,13 @@
 
 input[type="submit"] {
  margin-left: 5px;
+ background-color:  #6a040f;
+ color: #ffffff;
+ padding: 5px 10px;
+ border: darkgray;
+ cursor: pointer;
 }
+
 
 label {
   color: #6a040f;
@@ -83,6 +78,14 @@ label {
   background: rgba(255, 220, 220, 0.82);
   padding: 20px;
 }
+.Blog>h3{
+  color: #6a040f;
+  font-weight: larger;
+}
+.Blog>h4{
+  color: #6a040f;
+  font-weight: bolder;
+}
 
 .GetExercise{
   display: flex;
@@ -92,9 +95,54 @@ label {
   justify-content: center; 
   align-items: center; 
 }
+.ExerciseList{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 30px;
+}
+.AllExercise {
+  line-height: 0.5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background: rgba(200, 135, 135, 0.82);
+  width: 450px;
+  box-shadow: 3px 3px 4px 0px rgba(176, 176, 176, 0.25) inset, 4px 4px 2px 0px rgba(182, 181, 181, 0.25) inset, -4px -4px 1px 0px rgba(255, 255, 255, 0.25) inset;
+  transition: transform 0.2s ease-in-out;
+ }
+ .AllExercise:hover {
+   transform: scale(1.05); 
+   background-color: #6a040f;
+   color: white;
+ }
+.About {
+  background: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  padding: 20px;
+  color: white;
+}
 
-.active {
-  font-weight: bolder;
+a:visited{
+  color: rgb(252, 252, 252);
+  background-color: transparent;
+}
+a:hover{
+  color: rgb(255, 173, 202);
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: rgba(229, 63, 63, 0.82);
+  background-color: transparent;
+  text-decoration: underline;
+}
+.About >img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.About >h3{
+  color: rgb(255, 173, 202);
 }
 @media (max-width: 600px) {
   .Header {
