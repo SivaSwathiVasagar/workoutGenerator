@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Form from "../components/Form/Form";
 import GetExercise from "../components/GetExercise";
 import { useState } from "react";
@@ -19,7 +20,6 @@ export default function Home() {
       try {
         const response = await fetch(url, options);
         const result = await response.json();
-        console.log(result);
         setExercise(result);
       } catch (error) {
         console.error(error);
@@ -36,6 +36,7 @@ export default function Home() {
       </p>
       <Form exerciseSearch={getExercise} />
       <GetExercise exercises={exercises} />
+      <Footer />
     </div>
   );
 }

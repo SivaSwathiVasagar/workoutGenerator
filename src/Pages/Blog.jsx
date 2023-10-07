@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 export default function Blog() {
   return (
@@ -98,6 +99,7 @@ export default function Blog() {
         a beginner bodybuilder will help you fuel your workouts, support muscle
         growth, and lay the foundation for a successful fitness journey.
       </p>
+      <Footer />
     </div>
   );
 }

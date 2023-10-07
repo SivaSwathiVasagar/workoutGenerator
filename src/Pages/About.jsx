@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/newlogo.png";
+import Footer from "../components/Footer";
 
 export default function About() {
   return (
@@ -7,11 +8,12 @@ export default function About() {
       <img src={logo} alt="Logo" />
       <h3>App Description :</h3>
       <p>
-        Welcome to Workout Generator, your personalized fitness companion! Our
+        Welcome to Workout Generator, your personalized fitness companion! This
         tool empowers you to craft customized workout routines tailored to your
-        fitness goals. Simply select your target muscle group, and we'll curate
-        three expertly designed exercises based on your experience level. Get
-        ready to transform your fitness journey with Workout Generator.
+        fitness goals. Simply select your target muscle group, and our
+        capability to produce two exercises tailored to each proficiency level
+        upon your selection of a specific muscle group. Get ready to transform
+        your fitness journey with Workout Generator.
       </p>
       <h3>About me :</h3>
       <p>
@@ -74,8 +76,9 @@ export default function About() {
       <p>
         I'm open to discussions, feedback, and collaboration opportunities.
         Let's connect and explore the exciting possibilities that lie ahead in
-        the world of fitness and technology."
+        the world of fitness and technology.
       </p>
+      <Footer />
     </div>
   );
 }
