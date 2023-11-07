@@ -1,10 +1,11 @@
 # Workout Generator
 
-Workout Generator is a tool used to generate exercise based on user-chosen muscle group and provides 3 results based on experience level.
+Workout Generator is a tool used to generate exercise based on user-chosen muscle group and provides 3 - 6 results based on experience level.
 
 ## Getting Started
 
 - To get started, simply clone the repository from GitHub: [workoutGenerator](https://github.com/SivaSwathiVasagar/workoutGenerator)
+- Workout generator UI is hosted on GitHub Pages - [Workout Generator UI](https://sivaswathivasagar.github.io/workoutGenerator)
 - Once cloned, open the Workout Generator tool using your preferred web browser.
 - Choose the muscle group which you are planning to do a workout on the specific day.
 - Hit the submit button, and there you go, the exercises are displayed on the screen as per your request.
